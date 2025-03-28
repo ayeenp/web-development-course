@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fafafa;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .container h3 {
+    margin-top: 0;
+    color: #555;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  formula {
+    display: block;
+    font-weight: bold;
+    padding: 8px;
+    background-color: #e7f3fe;
+    border: 1px solid #b3d7ff;
+    border-radius: 3px;
+    text-align: center;
+  }
+  
