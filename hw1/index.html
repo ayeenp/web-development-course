@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dynamic Formula Evaluator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Dynamic Formula Evaluator</h2>
+  
+  <!-- Formula 1: Total Cost -->
+  <div class="container">
+    <h3>Formula 1: Total Cost</h3>
+    <input type="text" id="fee" placeholder="Unit Price"/>
+    <input type="text" id="count" placeholder="Quantity"/>
+    <input type="text" id="discount" placeholder="Discount"/>
+    <formula evaluator="count * fee - discount"></formula>
+  </div>
+  
+  <!-- Formula 2: Extended Cost -->
+  <div class="container">
+    <h3>Formula 2: Extended Cost</h3>
+    <input type="text" id="base" placeholder="Base Cost"/>
+    <input type="text" id="tax" placeholder="Tax"/>
+    <formula evaluator="base + tax"></formula>
+  </div>
+  
+  <!-- Formula 3: Discounted Price -->
+  <div class="container">
+    <h3>Formula 3: Discounted Price</h3>
+    <input type="text" id="price" placeholder="Original Price"/>
+    <input type="text" id="reduction" placeholder="Reduction"/>
+    <formula evaluator="price - reduction"></formula>
+  </div>
+  
+  <!-- Formula 4: Invalid Formula Test -->
+  <div class="container">
+    <h3>Formula 4: Invalid Formula Test</h3>
+    <input type="text" id="input1" placeholder="Input 1"/>
+    <input type="text" id="input2" placeholder="Input 2"/>
+    <!-- The evaluator contains a syntax error (extra '*' symbol) -->
+    <formula evaluator="input1 * * input2"></formula>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
